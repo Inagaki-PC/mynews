@@ -5,11 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>MyNews3</title>
-    　　　　<link rel="stylesheet" href="css/Test.css">
+        <title>MyKadai</title>
     </head>
     <body>
-        <h1 class = "Test">課題4編集画面</h1>
-        <p>装飾テスト</p>
+        <h1>課題4作成画面</h1>
+        <p>コメントテスト</p>
     </body>
 </html>
