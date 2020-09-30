@@ -46,6 +46,7 @@
                   
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
+<<<<<<< HEAD
                             
                         {{-- 以下を追記 --}}
                         <!-- Authentication Links -->
@@ -73,6 +74,8 @@
                             </li>
                             @endguest
                             {{-- 以上までを追記 --}}
+=======
+>>>>>>> e840dfd9bcf868f4325c28024028c4b8f79afa5b
                         </ul>
                     </div>
                 </div>
