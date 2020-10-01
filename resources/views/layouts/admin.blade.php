@@ -46,13 +46,11 @@
                   
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
-<<<<<<< HEAD
-
                         {{-- 以下を追記 --}}
                         <!-- Authentication Links -->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('messages.Login') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
                         @else
                             <li class="nav-item dropdown">
@@ -64,9 +62,8 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('messages.Logout') }}
+                                        {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
@@ -74,8 +71,6 @@
                             </li>
                             @endguest
                             {{-- 以上までを追記 --}}
-=======
->>>>>>> e840dfd9bcf868f4325c28024028c4b8f79afa5b
                         </ul>
                     </div>
                 </div>
