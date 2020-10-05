@@ -22,7 +22,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">氏名(name)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="name" value="{{ old('title') }}">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -36,7 +36,7 @@
                         <label class="col-md-2">趣味(hobby)</label>
                         <div class="col-md-10">
                             <select class="form-control" name="hobby">
-                                <option value="--未選択--">--未選択--</option>
+                                <option value="">--未選択--</option>
                                 <option value="サッカー">サッカー</option>
                                 <option value="野球">野球</option>
                                 <option value="バスケ">バスケ</option>
@@ -46,13 +46,18 @@
                                 <option value="バレーボール">バレーボール</option>
                                 <option value="その他">その他</option>
                             </select>
-                            <label>その他の場合、以下に入力してください</label><input type="text" class="form-control" name="title" value="{{ old('hobby') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                    <label class="col-md-2"></label>
+                        <div class="col-md-10">
+                            <label>その他の場合、以下に入力してください</label><input type="text" class="form-control" name="sonohoka" value="{{ old('sonohoka') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">自己紹介欄(introduction)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="introduction" rows="20">{{ old('body') }}</textarea>
                         </div>
                     </div>
                     {{ csrf_field() }}
