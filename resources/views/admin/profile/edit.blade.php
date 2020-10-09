@@ -64,9 +64,20 @@
                         </div>
                     </div>
                 </form>
+                {{-- 以下を追記 --}}
+                <div class="row mt-5">
+                    <div class="col-md4 mx-auto">
+                        <h2>プロフィール編集履歴</h2>
+                        <ul class="list-group">
+                            @if ($profile_form->histories2 != NULL)
+                                @foreach ($profile_form->histories2 as $history)
+                                    <li class="list-group-item">{{ $history->edited_at }}</li>
+                                @endforeach
+                            @endif
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 @endsection
-
-
