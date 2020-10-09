@@ -19,7 +19,7 @@ class CreateProfilesTable extends Migration
             $table->string('gender');  // 性別を保存するカラム
             $table->string('hobby');// 趣味のパスを保存するカラム
             $table->string('introduction'); // 自己紹介のパスを保存するカラム
-            $table->string('sonohoka'); // その他のパスを保存するカラム
+            $table->string('other')->nullable(); // その他のパスを保存するカラム
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateProfilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('news_profiles');
+        Schema::dropIfExists('profiles');
     }
 }
