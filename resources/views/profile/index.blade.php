@@ -15,6 +15,9 @@
                                 <div class="gender p-2">
                                     <h1>{{ str_limit($headline->gender, 10) }}</h1>
                                 </div>
+                                <div class="age p-2">
+                                    <h1>{{ str_limit($headline->age, 10) }}</h1>
+                                </div>
                                 <div class="hobby p-2">
                                     <h1>{{ str_limit($headline->hobby, 20) }}</h1>
                                 </div>
@@ -46,11 +49,14 @@
                                 <div class="gender">
                                     {{ str_limit($post->gender, 90) }}
                                 </div>
+                                <div class="age">
+                                    {{ str_limit($post->age, 90) }}
+                                </div>
                                 <div class="hobby">
                                     {{ str_limit($post->hobby, 100) }}
                                 </div>
                                 <div class="other">
-                                    {{ str_limit($post->other, 100) }}
+                                    {{ str_limit($post->other, 90) }}
                                 </div>
                                 <div class="introduction mt-3">
                                     {{ str_limit($post->introduction, 1500) }}

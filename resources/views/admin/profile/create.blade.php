@@ -33,6 +33,14 @@
                             <label>　女性<input  type="radio" class="radio" name="gender" value="女性"></label>
                         </div>
                     </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-md-2">年齢(age)</label>
+                        <div class="col-md-10">
+                            <label><input type="number" name="age" min="7" max="100" value="歳">歳</label>
+                        </div>
+                    </div>
+                    
                     <div class="form-group row">
                         <label class="col-md-2">趣味(hobby)</label>
                         <div class="col-md-10">
